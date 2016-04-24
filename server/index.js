@@ -6,11 +6,11 @@ var app = express();
 app.use(cors());
 
 app.get('/', function (req, res) {
-  res.send("iHeartRadio Assessment!");
+  res.send("Client Server App using React!");
 });
 
 app.use("/test", searchArtists);
 
 app.listen(3000, function () {
-  console.log("iHeartRadio Assessment listening on port 3000!");
+  console.log("Server listening on port 3000!");
 });
